@@ -620,6 +620,8 @@ publications:
     pages: "12–13"
 
   # ---------- Working Papers ----------
+  # Add `url: https://…` (e.g. an SSRN page) to make a title clickable on the
+  # site and in the PDF. If only a `doi:` is given, that is linked instead.
   - category: working
     authors: "Siemsen, E., Spiliotopoulou, E."
     title: "Chicken or the Egg? Forecast and Order Adjustments in Supply-Chain Planning"

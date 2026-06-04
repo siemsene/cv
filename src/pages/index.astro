@@ -117,10 +117,16 @@ const currentRoles = cv.positions.filter((p) => p.end == null);
         <!-- Working Papers -->
         <Section id="working-papers" eyebrow="In Progress" title="Working Papers">
           <ol class="space-y-5">
-            {workingPubs.map((p) => (
+            {workingPubs.map((p) => {
+              const href = p.url ?? (p.doi ? `https://doi.org/${p.doi}` : null);
+              return (
               <li>
                 <p class="font-serif text-[1.05rem] font-medium leading-snug text-ink">
-                  {p.title}
+                  {href ? (
+                    <a href={href} target="_blank" rel="noopener" class="link-underline">{p.title}</a>
+                  ) : (
+                    p.title
+                  )}
                 </p>
                 <p class="font-serif text-[0.95rem] leading-snug text-ink-soft">
                   {p.authors}
@@ -131,7 +137,8 @@ const currentRoles = cv.positions.filter((p) => p.end == null);
                   </span>
                 )}
               </li>
-            ))}
+              );
+            })}
           </ol>
         </Section>
 

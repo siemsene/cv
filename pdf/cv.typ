@@ -154,8 +154,11 @@
 
 #section("Working Papers")
 #for it in data.publications.filter(x => x.category == "working") {
+  let target = field(it, "url")
+  if target == none and field(it, "doi") != none { target = "https://doi.org/" + it.doi }
   block(below: 0.65em, {
-    [*#it.title.* ]
+    if target != none { link(target)[*#it.title.*] } else [*#it.title.*]
+    [ ]
     authors(it.authors)
     if field(it, "note") != none [ #text(fill: accent, size: 8.5pt, font: sans)[ · #it.note]]
   })
