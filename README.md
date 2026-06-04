@@ -60,23 +60,23 @@ CI installs Typst automatically. For local PDF builds, install Typst and either 
 `PATH` or drop the binary at `./bin/typst` (the `npm run pdf` wrapper checks both). See
 <https://github.com/typst/typst>. The PDF template is `pdf/cv.typ`.
 
-## Deployment (Cloudflare Pages)
+## Deployment (Cloudflare Workers Static Assets)
 
-Pushing to `main` builds and deploys automatically via `.github/workflows/deploy.yml`. The
-workflow also runs **weekly** (Mondays) to refresh citation counts, and can be triggered manually
-from the Actions tab.
+The site is hosted as a Cloudflare **Worker with static assets** (`wrangler.jsonc`), served at
+`siemsen.edutool.org`. Pushing to `main` builds and deploys automatically via
+`.github/workflows/deploy.yml`; the workflow also runs **weekly** (Mondays) to refresh citation
+counts, and can be triggered manually from the Actions tab.
 
 One-time setup:
 
-1. **Create the Pages project** (dashboard → Workers & Pages → Create → Pages → *Direct Upload*,
-   or it's created on first `wrangler pages deploy`). Name it **`siemsen-cv`** (must match
-   `--project-name` in the workflow).
+1. **Create the project**: dashboard → Workers & Pages → Create → *Upload Static Files*. Name it
+   **`siemsen-cv`** (must match `name` in `wrangler.jsonc`), upload `dist/` once to bootstrap.
 2. **Add repo secrets** (Settings → Secrets and variables → Actions):
-   - `CLOUDFLARE_API_TOKEN` — a token with the *Cloudflare Pages: Edit* permission.
+   - `CLOUDFLARE_API_TOKEN` — a token from the **"Edit Cloudflare Workers"** template
+     (needs *Workers Scripts: Edit*).
    - `CLOUDFLARE_ACCOUNT_ID` — your account id (Cloudflare dashboard URL / right sidebar).
-3. **Custom domain**: in the Pages project → Custom domains → add `siemsen.edutool.org`.
-   Since `edutool.org` DNS is on Cloudflare, the `siemsen` CNAME is added for you. Done.
+3. **Custom domain**: in the Worker → Settings → Domains & Routes → add `siemsen.edutool.org`.
+   Since `edutool.org` DNS is on Cloudflare, the record is added for you.
 
-> Prefer a Git-connected Pages project instead of GitHub Actions? It works, but the build image
-> doesn't ship Typst — you'd have to download it in the build command. The Actions approach here
-> avoids that and gives native weekly scheduling.
+After that, `wrangler deploy` (run by the workflow) updates the same Worker and the custom domain
+stays attached. The PDF is served at `/cv.pdf`, the machine-readable data at `/cv-data.json`.

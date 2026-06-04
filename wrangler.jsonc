@@ -1,0 +1,10 @@
+{
+  // Static-assets-only Worker (no server code) — serves the built site.
+  // `name` must match the existing Cloudflare project so deploys update it
+  // (and keep the siemsen.edutool.org custom domain attached).
+  "name": "siemsen-cv",
+  "compatibility_date": "2026-06-01",
+  "assets": {
+    "directory": "./dist"
+  }
+}

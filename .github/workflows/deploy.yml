@@ -36,9 +36,12 @@ jobs:
       # Runs fetch (OpenAlex) -> data -> pdf (Typst) -> astro build.
       - run: npm run build
 
-      - name: Deploy to Cloudflare Pages
+      # Deploys the static `dist/` as a Workers Static-Assets project
+      # (config in wrangler.jsonc). Updates the existing `siemsen-cv`
+      # Worker, keeping the siemsen.edutool.org custom domain.
+      - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=siemsen-cv --branch=main
+          command: deploy
