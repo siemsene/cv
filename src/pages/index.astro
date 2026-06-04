@@ -1,0 +1,341 @@
+---
+import Base from '../layouts/Base.astro';
+import Sidebar from '../components/Sidebar.astro';
+import Section from '../components/Section.astro';
+import Publication from '../components/Publication.astro';
+import { cv, yearRange, pubsByCategory } from '../data/cv';
+
+const journalPubs = pubsByCategory('journal');
+const otherPubs = pubsByCategory('other');
+const workingPubs = pubsByCategory('working');
+const currentRoles = cv.positions.filter((p) => p.end == null);
+---
+
+<Base>
+  <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+    <div class="lg:grid lg:grid-cols-[20rem_1fr] lg:gap-14 xl:grid-cols-[22rem_1fr] xl:gap-20">
+      <!-- Left rail -->
+      <div class="pt-12 lg:pt-0">
+        <Sidebar />
+      </div>
+
+      <!-- Content -->
+      <main class="min-w-0 pb-24 pt-8 lg:pt-12">
+        <!-- About -->
+        <Section id="about" eyebrow="Curriculum Vitae" title="About">
+          <p class="max-w-2xl font-serif text-xl leading-relaxed text-ink-soft sm:text-[1.4rem]">
+            {cv.profile.tagline}
+          </p>
+          {currentRoles.length > 0 && (
+            <dl class="mt-8 grid gap-x-8 gap-y-3 sm:grid-cols-2">
+              {currentRoles.map((p) => (
+                <div class="border-l-2 border-accent-soft pl-4">
+                  <dt class="font-serif font-medium leading-snug text-ink">
+                    {p.title}
+                  </dt>
+                  <dd class="text-sm leading-snug text-ink-faint">
+                    {p.org}{p.location ? ` · ${p.location}` : ''}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          )}
+        </Section>
+
+        <!-- Appointments -->
+        <Section id="positions" eyebrow="Positions Held" title="Appointments">
+          <ol class="space-y-0">
+            {cv.positions.map((p) => (
+              <li class="grid grid-cols-[5.5rem_1fr] gap-4 border-b border-dashed border-line py-3.5 last:border-0 sm:grid-cols-[7rem_1fr]">
+                <span class="pt-0.5 font-grotesk text-sm tabular-nums text-ink-faint">
+                  {yearRange(p.start, p.end)}
+                </span>
+                <div>
+                  <p class="font-serif text-[1.05rem] font-medium leading-snug text-ink">
+                    {p.title}
+                  </p>
+                  <p class="text-sm leading-snug text-ink-soft">
+                    {p.org}{p.unit ? `, ${p.unit}` : ''}
+                  </p>
+                  {p.location && (
+                    <p class="text-sm text-ink-faint">{p.location}</p>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ol>
+        </Section>
+
+        <!-- Education -->
+        <Section id="education" eyebrow="Degrees" title="Education">
+          <ol class="space-y-6">
+            {cv.education.map((e) => (
+              <li class="grid grid-cols-[5.5rem_1fr] gap-4 sm:grid-cols-[7rem_1fr]">
+                <span class="pt-0.5 font-grotesk text-sm tabular-nums text-ink-faint">
+                  {e.date}
+                </span>
+                <div>
+                  <p class="font-serif text-[1.05rem] font-medium leading-snug text-ink">
+                    {e.degree}
+                  </p>
+                  <p class="text-sm text-ink-soft">{e.institution}</p>
+                  {e.thesis_title && (
+                    <p class="mt-1 font-serif text-sm italic text-ink-faint">
+                      “{e.thesis_title}”
+                    </p>
+                  )}
+                  {e.advisors?.map((a) => (
+                    <p class="text-sm text-ink-faint">{a}</p>
+                  ))}
+                </div>
+              </li>
+            ))}
+          </ol>
+        </Section>
+
+        <!-- Publications -->
+        <Section id="publications" eyebrow="Refereed & Other" title="Publications">
+          <div class="mb-6 flex items-baseline gap-3">
+            <h3 class="eyebrow text-ink-soft">Research Publications</h3>
+            <span class="h-px flex-1 bg-line"></span>
+            <span class="text-xs text-ink-faint">{journalPubs.length}</span>
+          </div>
+          <div class="divide-y divide-line">
+            {journalPubs.map((pub, i) => <Publication pub={pub} index={i} />)}
+          </div>
+
+          <div class="mb-6 mt-12 flex items-baseline gap-3">
+            <h3 class="eyebrow text-ink-soft">Books, Chapters & Editorials</h3>
+            <span class="h-px flex-1 bg-line"></span>
+            <span class="text-xs text-ink-faint">{otherPubs.length}</span>
+          </div>
+          <div class="divide-y divide-line">
+            {otherPubs.map((pub, i) => <Publication pub={pub} index={i} />)}
+          </div>
+        </Section>
+
+        <!-- Working Papers -->
+        <Section id="working-papers" eyebrow="In Progress" title="Working Papers">
+          <ol class="space-y-5">
+            {workingPubs.map((p) => (
+              <li>
+                <p class="font-serif text-[1.05rem] font-medium leading-snug text-ink">
+                  {p.title}
+                </p>
+                <p class="font-serif text-[0.95rem] leading-snug text-ink-soft">
+                  {p.authors}
+                </p>
+                {p.note && (
+                  <span class="mt-1 inline-block rounded bg-accent-soft px-1.5 py-0.5 text-[0.7rem] font-medium tracking-wide text-accent">
+                    {p.note}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ol>
+        </Section>
+
+        <!-- Awards -->
+        <Section id="awards" eyebrow="Honors" title="Awards, Fellowships & Grants">
+          <ol class="space-y-0">
+            {cv.awards.map((a) => (
+              <li class="grid grid-cols-[5.5rem_1fr] gap-4 border-b border-dashed border-line py-3 last:border-0 sm:grid-cols-[7rem_1fr]">
+                <span class="pt-0.5 font-grotesk text-sm tabular-nums text-ink-faint">
+                  {a.date}
+                </span>
+                <div>
+                  <p class="font-serif leading-snug text-ink">{a.title}</p>
+                  {a.detail && <p class="text-sm text-ink-faint">{a.detail}</p>}
+                </div>
+              </li>
+            ))}
+          </ol>
+        </Section>
+
+        <!-- Editorial -->
+        <Section id="editorial" eyebrow="Journals" title="Editorial Work">
+          <ol class="space-y-6">
+            {cv.editorial.map((e) => (
+              <li>
+                <p class="font-serif text-[1.05rem] font-medium leading-snug text-ink">
+                  {e.journal}
+                </p>
+                <ul class="mt-1.5 space-y-1">
+                  {e.roles.map((r) => (
+                    <li class="flex flex-wrap items-baseline justify-between gap-x-4 text-sm">
+                      <span class="text-ink-soft">{r.role}</span>
+                      <span class="font-grotesk tabular-nums text-ink-faint">{r.years}</span>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ol>
+          {cv.ad_hoc_reviewing && (
+            <p class="mt-8 border-t border-line pt-5 font-serif text-sm leading-relaxed text-ink-faint">
+              {cv.ad_hoc_reviewing}
+            </p>
+          )}
+        </Section>
+
+        <!-- Service -->
+        <Section id="service" eyebrow="Profession" title="Service & Committees">
+          <h3 class="eyebrow mb-4 text-ink-soft">Leadership in Professional Societies</h3>
+          <ol class="space-y-5">
+            {cv.society_leadership.map((s) => (
+              <li>
+                <p class="font-serif font-medium leading-snug text-ink">{s.org}</p>
+                <p class="text-sm leading-snug text-ink-soft">{s.roles.join(' · ')}</p>
+              </li>
+            ))}
+          </ol>
+          <h3 class="eyebrow mb-4 mt-10 text-ink-soft">Prize Committees</h3>
+          <ul class="space-y-2">
+            {cv.prize_committees.map((p) => (
+              <li class="flex gap-3 font-serif text-[0.95rem] leading-snug text-ink-soft">
+                <span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent"></span>
+                {p}
+              </li>
+            ))}
+          </ul>
+        </Section>
+
+        <!-- Doctoral Students -->
+        <Section id="students" eyebrow="Mentorship" title="Doctoral Students">
+          <ol class="grid gap-x-10 gap-y-5 sm:grid-cols-2">
+            {cv.doctoral_students.map((s) => (
+              <li>
+                <p class="font-serif text-[1.05rem] font-medium leading-snug text-ink">
+                  {s.name} <span class="font-normal text-ink-faint">· PhD {s.year}</span>
+                </p>
+                <p class="text-sm leading-snug text-ink-soft">
+                  {s.role}, {s.institution}
+                </p>
+                {s.placement && (
+                  <p class="text-sm leading-snug text-ink-faint">{s.placement}</p>
+                )}
+              </li>
+            ))}
+          </ol>
+        </Section>
+
+        <!-- Invited Talks -->
+        <Section id="talks" eyebrow="Seminars & Colloquia" title="Invited Presentations">
+          <ol class="space-y-6">
+            {cv.invited_talks.map((t) => (
+              <li>
+                <p class="font-serif text-[1.05rem] font-medium leading-snug text-ink">
+                  “{t.title}”
+                </p>
+                <p class="mt-1 text-sm leading-relaxed text-ink-faint">{t.venues}</p>
+              </li>
+            ))}
+          </ol>
+        </Section>
+
+        <!-- Teaching -->
+        <Section id="teaching" eyebrow="In the Classroom" title="Teaching">
+          <div class="overflow-hidden rounded-lg border border-line">
+            <table class="w-full border-collapse text-sm">
+              <thead>
+                <tr class="bg-paper-2 text-left">
+                  <th class="px-4 py-2.5 font-grotesk text-xs font-semibold uppercase tracking-wider text-ink-faint">Term</th>
+                  <th class="px-4 py-2.5 font-grotesk text-xs font-semibold uppercase tracking-wider text-ink-faint">Course</th>
+                  <th class="px-4 py-2.5 font-grotesk text-xs font-semibold uppercase tracking-wider text-ink-faint">Role</th>
+                  <th class="px-4 py-2.5 text-right font-grotesk text-xs font-semibold uppercase tracking-wider text-ink-faint">Rating</th>
+                </tr>
+              </thead>
+              <tbody>
+                {cv.teaching.map((t) => (
+                  <tr class="border-t border-line even:bg-paper-2/40">
+                    <td class="whitespace-nowrap px-4 py-2 font-grotesk tabular-nums text-ink-faint">{t.semester}</td>
+                    <td class="px-4 py-2 font-serif text-ink">{t.course}</td>
+                    <td class="px-4 py-2 text-ink-soft">{t.role}</td>
+                    <td class="whitespace-nowrap px-4 py-2 text-right font-grotesk tabular-nums text-ink-soft">{t.rating}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {cv.teaching_note && (
+            <p class="mt-4 font-serif text-sm italic text-ink-faint">{cv.teaching_note}</p>
+          )}
+        </Section>
+
+        <!-- Software & Sites -->
+        <Section id="software" eyebrow="Open Source & Web" title="Software & Sites">
+          <div class="grid gap-10 sm:grid-cols-2">
+            <div>
+              <h3 class="eyebrow mb-4 text-ink-soft">GitHub Repositories</h3>
+              <ul class="space-y-3">
+                {cv.repositories.map((r) => (
+                  <li>
+                    <a href={r.url} target="_blank" rel="noopener" class="link-underline font-serif font-medium text-ink">
+                      {r.url.replace('https://github.com/', '')}
+                    </a>
+                    <p class="text-sm leading-snug text-ink-faint">{r.description}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 class="eyebrow mb-4 text-ink-soft">Websites</h3>
+              <ul class="space-y-3">
+                {cv.websites.map((w) => (
+                  <li>
+                    <a href={w.url} target="_blank" rel="noopener" class="link-underline font-serif font-medium text-ink">
+                      {w.url.replace('https://', '').replace(/\/$/, '')}
+                    </a>
+                    <p class="text-sm leading-snug text-ink-faint">{w.description}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </Section>
+
+        <!-- Administration -->
+        <Section id="leadership" eyebrow="Initiatives" title="Major Administrative Initiatives">
+          <ol class="space-y-0">
+            {cv.admin_initiatives.map((a) => (
+              <li class="grid grid-cols-[5.5rem_1fr] gap-4 border-b border-dashed border-line py-3.5 last:border-0 sm:grid-cols-[7rem_1fr]">
+                <span class="pt-0.5 font-grotesk text-sm tabular-nums text-ink-faint">{a.years}</span>
+                <p class="font-serif leading-snug text-ink-soft">{a.description}</p>
+              </li>
+            ))}
+          </ol>
+        </Section>
+
+        <footer class="mt-16 border-t border-line pt-6 text-xs text-ink-faint">
+          <p>
+            Citation metrics from <a class="link-underline" href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a>,
+            refreshed automatically. Built from a single data source · also available as a
+            <a class="link-underline" href="/cv.pdf">typeset PDF</a>.
+          </p>
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <!-- Scrollspy: highlight the active section in the side nav. -->
+  <script>
+    const links = [...document.querySelectorAll<HTMLAnchorElement>('.nav-link')];
+    const byId = new Map(links.map((l) => [l.dataset.section, l]));
+    const setActive = (id: string | null) => {
+      for (const l of links) l.dataset.active = String(l.dataset.section === id);
+    };
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible) setActive(visible.target.id);
+      },
+      { rootMargin: '-20% 0px -65% 0px', threshold: [0, 0.25, 0.5, 1] },
+    );
+    for (const id of byId.keys()) {
+      const el = id && document.getElementById(id);
+      if (el) observer.observe(el);
+    }
+  </script>
+</Base>

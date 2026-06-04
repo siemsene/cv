@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ *
+ * Design tokens — a modern, warm "academic paper" theme.
+ * ------------------------------------------------------------------ */
+@theme {
+  /* Fraunces = characterful display serif; Source Serif 4 = body reading
+     serif; Hanken Grotesk = metadata / labels / UI. */
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-serif: "Source Serif 4", ui-serif, Georgia, serif;
+  --font-grotesk: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+
+  /* Warm paper + deep ink, with a restrained burgundy accent. */
+  --color-paper: #fbfaf6;
+  --color-paper-2: #f3efe6;
+  --color-ink: #211e1a;
+  --color-ink-soft: #4a463f;
+  --color-ink-faint: #8a847a;
+  --color-line: #e3ded2;
+  --color-accent: #7c2d36;
+  --color-accent-soft: #f1e6e2;
+}
+
+/* Base rules live in @layer base so Tailwind utilities (which sit in the
+   later `utilities` layer) can always override them. Unlayered rules would
+   beat every layer and silently break color/font utilities. */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Offset anchored sections so the sticky nav doesn't cover headings. */
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-grotesk);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    /* Faint paper grain via a layered radial speckle. */
+    background-image:
+      radial-gradient(rgba(124, 45, 54, 0.018) 1px, transparent 1px),
+      radial-gradient(rgba(33, 30, 26, 0.015) 1px, transparent 1px);
+    background-size: 22px 22px, 31px 31px;
+    background-position: 0 0, 11px 11px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+}
+
+@layer components {
+  /* Small-caps grotesque label used for section eyebrows + nav. */
+  .eyebrow {
+    font-family: var(--font-grotesk);
+    font-weight: 600;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+  }
+
+  /* Staggered page-load reveal. Elements opt in with .reveal and a
+     --d (delay) custom property. Respects reduced-motion. */
+  .reveal {
+    opacity: 0;
+    animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: var(--d, 0ms);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { animation: none; opacity: 1; }
+  }
+
+  /* Links inside body content get a refined underline on hover. */
+  .link-underline {
+    background-image: linear-gradient(var(--color-accent), var(--color-accent));
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.3s ease;
+    text-decoration: none;
+  }
+  .link-underline:hover {
+    background-size: 100% 1px;
+  }
+
+  /* Active nav item driven by IntersectionObserver in index.astro. */
+  .nav-link[data-active="true"] {
+    color: var(--color-ink);
+  }
+  .nav-link[data-active="true"] .nav-dot {
+    background-color: var(--color-accent);
+    transform: scale(1);
+  }
+}
+
+/* Keyframes are global (not layered). */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

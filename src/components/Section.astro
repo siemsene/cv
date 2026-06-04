@@ -1,0 +1,19 @@
+---
+// A CV section: small-caps eyebrow + serif heading over a hairline rule,
+// then the slotted content. Anchored by `id` for the sticky nav.
+interface Props { id: string; eyebrow: string; title: string; }
+const { id, eyebrow, title } = Astro.props;
+---
+
+<section id={id} class="scroll-mt-24 py-10 first:pt-0 sm:py-14">
+  <header class="mb-7 border-b border-line pb-3">
+    <p class="eyebrow mb-1.5">{eyebrow}</p>
+    <h2
+      class="font-display text-2xl font-medium tracking-tight text-ink sm:text-[1.75rem]"
+      style="font-optical-sizing:auto"
+    >
+      {title}
+    </h2>
+  </header>
+  <slot />
+</section>

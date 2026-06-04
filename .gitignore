@@ -1,0 +1,17 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# generated artifacts (rebuilt every run)
+public/cv-data.json
+public/cv.pdf
+
+# tooling
+bin/
+.DS_Store
+*.log
+
+# the original source PDF lives in the repo root; keep the generated one ignored

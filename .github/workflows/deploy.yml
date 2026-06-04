@@ -1,0 +1,44 @@
+name: Build & Deploy CV
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}        # run manually from the Actions tab
+  schedule:
+    - cron: '17 6 * * 1'       # every Monday 06:17 UTC — refresh OpenAlex citations
+
+# Avoid overlapping deploys.
+concurrency:
+  group: deploy-cv
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install Typst
+        uses: typst-community/setup-typst@v4
+        with:
+          typst-version: '0.14.2'
+
+      - run: npm ci
+
+      # Runs fetch (OpenAlex) -> data -> pdf (Typst) -> astro build.
+      - run: npm run build
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=siemsen-cv --branch=main

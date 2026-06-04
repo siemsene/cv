@@ -1,0 +1,53 @@
+---
+import type { Publication } from '../data/cv';
+interface Props { pub: Publication; index: number; }
+const { pub } = Astro.props;
+
+// Bold the author's own name within the author string.
+const authorsHtml = (pub.authors ?? '').replace(
+  /(Siemsen,?\s*E\.?)/g,
+  '<span class="font-semibold text-ink">$1</span>',
+);
+const doiUrl = pub.doi ? `https://doi.org/${pub.doi}` : pub.url;
+const venueBits = [pub.venue, pub.volume && `${pub.volume}${pub.issue ? `(${pub.issue})` : ''}`, pub.pages]
+  .filter(Boolean)
+  .join(', ');
+---
+
+<article class="group relative flex gap-4 py-4 first:pt-0">
+  <div class="min-w-0 flex-1">
+    <p class="font-serif text-[0.95rem] leading-snug text-ink-soft" set:html={authorsHtml} />
+    <h3 class="mt-1 font-serif text-[1.06rem] font-medium leading-snug text-ink">
+      {doiUrl ? (
+        <a href={doiUrl} target="_blank" rel="noopener" class="link-underline">{pub.title}</a>
+      ) : (
+        pub.title
+      )}
+    </h3>
+    <p class="mt-1 font-serif text-[0.92rem] italic leading-snug text-ink-faint">
+      {venueBits}{pub.year ? <span class="not-italic"> · {pub.year}</span> : null}
+      {pub.note && (
+        <span class="ml-1 inline-block rounded bg-accent-soft px-1.5 py-0.5 text-[0.68rem] not-italic font-medium tracking-wide text-accent">
+          {pub.note}
+        </span>
+      )}
+    </p>
+  </div>
+
+  {typeof pub.citations === 'number' && (
+    <a
+      href={pub.citations > 0 ? `https://openalex.org/works?filter=doi:${pub.doi}` : undefined}
+      target="_blank"
+      rel="noopener"
+      class="h-fit shrink-0 select-none text-right"
+      title="Citations (OpenAlex)"
+    >
+      <span class="block font-display text-lg font-medium leading-none text-accent">
+        {pub.citations.toLocaleString('en-US')}
+      </span>
+      <span class="mt-0.5 block text-[0.6rem] uppercase tracking-[0.1em] text-ink-faint">
+        cites
+      </span>
+    </a>
+  )}
+</article>

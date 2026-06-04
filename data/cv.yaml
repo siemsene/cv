@@ -1,0 +1,940 @@
+# =====================================================================
+#  Enno Siemsen — CV source of truth
+#  Edit this file to change the website AND the PDF. Both are generated
+#  from this single file. Citation counts are filled in automatically
+#  from OpenAlex (matched by DOI) — you do not edit those by hand.
+# =====================================================================
+
+profile:
+  name: Enno Siemsen
+  credential: PhD
+  title: Patrick A. Thiele Distinguished Chair in Business
+  affiliation: Wisconsin School of Business, University of Wisconsin–Madison
+  location: Madison, WI, USA
+  tagline: >-
+    Behavioral operations, demand forecasting, and operations strategy —
+    studying how people and analytics together make better operational decisions.
+  # OpenAlex author used for live citation metrics + per-paper counts.
+  openalex_author_id: A5086167634
+  # TODO: confirm your preferred public contact email.
+  email: esiemsen@wisc.edu
+  links:
+    - label: edutool.org
+      url: https://edutool.org/
+    - label: Blog
+      url: https://blog.edutool.org/
+    - label: OM List
+      url: https://omlist.edutool.org/
+    - label: GitHub
+      url: https://github.com/siemsene
+    - label: OpenAlex
+      url: https://openalex.org/A5086167634
+
+# ---------------------------------------------------------------------
+positions:
+  - org: University of Wisconsin–Madison
+    unit: Wisconsin School of Business
+    title: Patrick A. Thiele Distinguished Chair in Business
+    location: Madison, WI, USA
+    start: 2021
+    end: null
+  - org: University of Bath
+    unit: School of Management
+    title: International Distinguished Professor
+    location: Bath, UK
+    start: 2024
+    end: null
+  - org: University of Wisconsin–Madison
+    unit: Wisconsin School of Business
+    title: Director, Erdman Center for Operations & Technology Management
+    location: Madison, WI, USA
+    start: 2016
+    end: null
+  - org: Nova University
+    unit: Nova School of Business
+    title: Visiting Professor
+    location: Lisbon, PT
+    start: 2025
+    end: 2026
+  - org: University of Wisconsin–Madison
+    unit: Wisconsin School of Business
+    title: Associate Dean of MBA and Masters Programs
+    location: Madison, WI, USA
+    start: 2018
+    end: 2024
+  - org: University of Wisconsin–Madison
+    unit: Wisconsin School of Business
+    title: Procter & Gamble Bascom Professor
+    location: Madison, WI, USA
+    start: 2015
+    end: 2021
+  - org: University of Minnesota
+    unit: Carlson School of Management
+    title: Associate Professor of Business Administration
+    location: Minneapolis, MN, USA
+    start: 2012
+    end: 2015
+  - org: University of Minnesota
+    unit: Carlson School of Management
+    title: Assistant Professor of Business Administration
+    location: Minneapolis, MN, USA
+    start: 2008
+    end: 2012
+  - org: University of Illinois at Urbana–Champaign
+    unit: Department of Business Administration
+    title: Assistant Professor of Business Administration
+    location: Champaign, IL, USA
+    start: 2005
+    end: 2008
+  - org: University of North Carolina at Chapel Hill
+    unit: Kenan-Flagler Business School
+    title: Research and Teaching Assistant
+    location: Chapel Hill, NC, USA
+    start: 2001
+    end: 2005
+  - org: University of Göttingen
+    unit: Department of Economics
+    title: Research and Teaching Assistant
+    location: Göttingen, Germany
+    start: 1998
+    end: 2001
+  - org: Golden European Supplies Ltd.
+    unit: Consumer Electronics Production
+    title: Internship
+    location: Shenzhen, China
+    start: 1999
+    end: 1999
+  - org: Roland Berger & Partner GmbH
+    unit: Strategic Management Consultancy
+    title: Internship & Contract Work
+    location: Munich, Germany
+    start: 1997
+    end: 1998
+
+# ---------------------------------------------------------------------
+education:
+  - degree: PhD in Operations, Technology and Innovation Management
+    institution: University of North Carolina at Chapel Hill
+    date: 2005
+    thesis_title: "Essays on Knowledge Sharing"
+    advisors:
+      - "Thesis Advisor: Aleda V. Roth"
+      - "Thesis Co-chair: Sridhar Balasubramanian"
+  - degree: Diplom Kaufmann
+    institution: University of Göttingen
+    date: 2001
+    thesis_title: "Controlling Knowledge Management"
+    advisors:
+      - "Thesis Advisor: Jürgen Bloech"
+
+# ---------------------------------------------------------------------
+awards:
+  - date: 06/2025
+    title: Outstanding Paper Award, IJOPM
+  - date: 05/2024
+    title: Dean’s Distinguished Service Award
+  - date: 02/2024
+    title: Jack Meredith Best Published Paper Award
+  - date: 09/2019
+    title: FDA Research BAA
+    detail: "$1.7M, Investigator"
+  - date: 09/2018
+    title: Chris Voss Highly Commended Paper Award, EUROMA
+  - date: 05/2018
+    title: Erwin Gaumnitz Distinguished Research Award, Wisconsin School of Business
+  - date: 12/2017
+    title: FDA Research Grant
+    detail: "$1.5M, Principal Investigator"
+  - date: 10/2017
+    title: M&SOM Young Scholar Award
+  - date: 05/2017
+    title: APICS Research Grant
+    detail: "$41.5K, Co-Investigator"
+  - date: 08/2016
+    title: JOM Associate Editor Service Award
+  - date: 05/2016
+    title: Fetzer Fellowship, Wisconsin School of Business
+  - date: 05/2015
+    title: Teaching Innovator of the Year Award
+    detail: MBA Association, Carlson School of Management, University of Minnesota
+  - date: 05/2014
+    title: Best Associate Editor for JOM Award
+  - date: 09/2013
+    title: Management Science Distinguished Service Award
+  - date: 06/2013
+    title: Behavioral Operations Conference Best Paper Presentation
+  - date: 05/2013
+    title: Best Associate Editor for JOM Award
+  - date: 03/2011
+    title: M&SOM Meritorious Service Award
+  - date: 02/2008
+    title: Alumni Association Award for Excellence in Graduate Teaching
+    detail: College of Business, University of Illinois at Urbana–Champaign
+  - date: 12/2006
+    title: M&SOM Meritorious Service Award
+  - date: 08/2006
+    title: Buffa Dissertation Competition Honorable Mention
+    detail: Decision Sciences Institute
+  - date: 05/2004
+    title: Joseph Juran Doctoral Dissertation Fellowship
+    detail: Juran Center for Quality Management, University of Minnesota
+  - date: 05/2004
+    title: Peggy Lee & Sunil Wahal Award for Outstanding PhD Students
+    detail: University of North Carolina at Chapel Hill
+  - date: 05/2003
+    title: Joseph Juran Doctoral Paper Fellowship
+    detail: Juran Center for Quality Management, University of Minnesota
+
+# ---------------------------------------------------------------------
+admin_initiatives:
+  - years: 2023–2024
+    description: Organization of two ‘Generative AI’ days at the Wisconsin School of Business.
+  - years: 2022–2024
+    description: Development and launch of online MSDIA program in partnership with edX.
+  - years: 2021–2024
+    description: Development and re-launch of Executive MBA program.
+  - years: 2020–2021
+    description: >-
+      Development and launch of Technology Strategy & Product Management MBA
+      Specialization, as well as coordination of new Marketing specializations in FTMBA.
+  - years: 2019–2020
+    description: >-
+      Development and launch of Professional MBA program and badges lifelong learning
+      structure. Led a team to develop the proposal. Oversaw market research and industry
+      feedback. Facilitated campus negotiations and academic governance. Oversaw operational
+      deployment (scheduling, admissions, marketing, technology, course development, training, hiring).
+  - years: 2018–2019
+    description: >-
+      Oversaw development and launch of three MS programs (Business Analytics, Real Estate,
+      Supply Chain). Coordinated with departments, negotiations with campus, led academic
+      governance, oversaw implementation teams.
+  - years: 2018–2019
+    description: >-
+      Participated in major budget restructuring of the School of Business. Helped to close a
+      significant gap in our budget by, e.g., restructuring financial aid and cost cutting.
+  - years: 2016–2018
+    description: >-
+      Development of PharmD/OTM Named Option. Led coordination with School of Pharmacy & campus,
+      supported academic governance, negotiated memorandum of understanding and oversaw launch.
+  - years: 2015–2016
+    description: Introduced STEM Designation to MBA Program Specializations.
+  - years: 2012–2013
+    description: Participated in development of Executive MBA elective system.
+
+# ---------------------------------------------------------------------
+# Publications. category: journal | other | working
+# `doi` is used to pull the live citation count from OpenAlex. Leave it
+# empty for items OpenAlex does not track (some books, working papers).
+publications:
+  # ---------- Research Publications (peer-reviewed journals) ----------
+  - category: journal
+    authors: "Park, Y. S., Lee, Y. S., Siemsen, E."
+    year: 2025
+    title: "Two Heads are Better than One: Task Division and Decision Control in Inventory Planning"
+    venue: Production and Operations Management
+    volume: "34"
+    issue: "7"
+    pages: "1977–1994"
+    doi: 10.1177/10591478241309465
+  - category: journal
+    authors: "Petropoulos, F., Grushka-Cockayne, Y., Siemsen, E., Spiliotis, E."
+    year: 2025
+    title: "Wielding Occam’s Razor: Fast and Frugal Retail Forecasting"
+    venue: Journal of the Operational Research Society
+    volume: "76"
+    issue: "8"
+    pages: "1564–1583"
+    doi: 10.1080/01605682.2024.2421339
+  - category: journal
+    authors: "Kent, P., Siemsen, E., Shao, X."
+    year: 2024
+    title: "The Impact of Co-location on Production Knowledge Transfer in Collectivist and Individualist Cultures"
+    venue: International Journal of Operations and Production Management
+    volume: "44"
+    issue: "1"
+    pages: "179–205"
+    doi: 10.1108/ijopm-06-2022-0354
+  - category: journal
+    authors: "Brau, R., Aloysius, J., Siemsen, E."
+    year: 2023
+    title: "Demand Planning for the Digital Supply Chain: How to Integrate Human Judgment and Predictive Analytics"
+    venue: Journal of Operations Management
+    volume: "69"
+    issue: "6"
+    pages: "965–982"
+    doi: 10.1002/joom.1257
+  - category: journal
+    authors: "Arvan, M., Fahimnia, B., Tam, T., Siemsen, E."
+    year: 2023
+    title: "A Hidden Anchor: The Influence of Service Levels on Demand Forecasts"
+    venue: Journal of Operations Management
+    volume: "69"
+    issue: "5"
+    pages: "856–871"
+    doi: 10.1002/joom.1229
+  - category: journal
+    authors: "Petropoulos, F., Siemsen, E."
+    year: 2023
+    title: "Forecast Selection and Representativeness"
+    venue: Management Science
+    volume: "69"
+    issue: "5"
+    pages: "2672–2690"
+    doi: 10.1287/mnsc.2022.4485
+  - category: journal
+    authors: "Wuttke, D., Upadhyay, A., Wuttke-Linnemann, A., Siemsen, E."
+    year: 2022
+    title: "Seeing the Bigger Picture? Ramping-Up Production with the Use of Augmented Reality"
+    venue: Manufacturing and Service Operations Management
+    volume: "24"
+    issue: "4"
+    pages: "2349–2366"
+    doi: 10.1287/msom.2021.1070
+  - category: journal
+    authors: "Dhanorkar, S., Siemsen, E."
+    year: 2021
+    title: "How Nudges Lead to Improved Energy Efficiency in Manufacturing: Evidence from Archival Data and Field Study"
+    venue: Production and Operations Management
+    volume: "30"
+    issue: "10"
+    pages: "3735–3757"
+    doi: 10.1111/poms.13479
+  - category: journal
+    authors: "Zhao, H., Xu, L., Siemsen, E."
+    year: 2021
+    title: "Inventory Sharing and Demand-Side Underweighting"
+    venue: Manufacturing and Service Operations Management
+    volume: "23"
+    issue: "5"
+    pages: "1217–1236"
+    doi: 10.1287/msom.2020.0875
+  - category: journal
+    authors: "Fahimnia, B., Mehrdokht, P., Siemsen, E., Bendoly, E., Wang, C."
+    year: 2019
+    title: "Behavioral Operations and Supply Chain Management: A Review and Literature Mapping"
+    venue: Decision Sciences
+    volume: "50"
+    issue: "6"
+    pages: "1127–1183"
+    doi: 10.1111/deci.12369
+  - category: journal
+    authors: "Arvan, M., Fahimnia, B., Reisi, M., Siemsen, E."
+    year: 2019
+    title: "Integrating Human Judgment into Quantitative Forecasting Methods: A Review"
+    venue: Omega
+    volume: "86"
+    pages: "237–252"
+    doi: 10.1016/j.omega.2018.07.012
+  - category: journal
+    authors: "Zhang, Y., Siemsen, E."
+    year: 2019
+    title: "A Meta-Analysis of Newsvendor Experiments: Revisiting the Pull-to-Center Asymmetry"
+    venue: Production and Operations Management
+    volume: "28"
+    issue: "1"
+    pages: "140–156"
+    doi: 10.1111/poms.12899
+  - category: journal
+    authors: "Dhanorkar, S., Siemsen, E., Linderman, K."
+    year: 2018
+    title: "Promoting Change from the Outside: Directing Managerial Attention in the Implementation of Environmental Improvements"
+    venue: Management Science
+    volume: "64"
+    issue: "6"
+    pages: "2535–2556"
+    doi: 10.1287/mnsc.2017.2748
+  - category: journal
+    authors: "Lee, Y. S., Seo, Y. W., Siemsen, E."
+    year: 2018
+    title: "Running Behavioral Operations Experiments using Amazon’s Mechanical Turk"
+    venue: Production and Operations Management
+    volume: "27"
+    issue: "5"
+    pages: "973–989"
+    doi: 10.1111/poms.12841
+  - category: journal
+    authors: "Petropoulos, F., Korentzes, N., Nikolopoulos, K., Siemsen, E."
+    year: 2018
+    title: "Judgmental Selection of Forecasting Models"
+    venue: Journal of Operations Management
+    volume: "60"
+    issue: "5"
+    pages: "34–46"
+    doi: 10.1016/j.jom.2018.05.005
+  - category: journal
+    authors: "Kent, P., Siemsen, E."
+    year: 2018
+    title: "Production Process Moves: Template Use and the Need to Adapt"
+    venue: Production and Operations Management
+    volume: "27"
+    issue: "3"
+    pages: "480–495"
+    doi: 10.1111/poms.12812
+  - category: journal
+    authors: "Wuttke, D., Donohue, K., Siemsen, E."
+    year: 2018
+    title: "Initiating and Sustaining Supplier Involvement in Development Projects: Behavioral Aspects in the Contract Design"
+    venue: Production and Operations Management
+    volume: "27"
+    issue: "1"
+    pages: "80–99"
+    doi: 10.1111/poms.12784
+  - category: journal
+    authors: "Lee, Y.-S., Siemsen, E."
+    year: 2017
+    title: "Task Decomposition and Newsvendor Decision Making"
+    venue: Management Science
+    volume: "63"
+    issue: "10"
+    pages: "3226–3245"
+    doi: 10.1287/mnsc.2016.2521
+  - category: journal
+    authors: "Ball, G., Siemsen, E., Shah, R."
+    year: 2017
+    title: "Do Plant Inspections Predict Future Quality? The Role of Investigator Experience"
+    venue: Manufacturing and Service Operations Management
+    volume: "19"
+    issue: "4"
+    pages: "534–550"
+    note: Lead Article
+    doi: 10.1287/msom.2017.0661
+  - category: journal
+    authors: "Jones-Christensen, L., Siemsen, E., Branzei, O., Viswanathan, M."
+    year: 2017
+    title: "Response Pattern Analysis: Assuring Data Integrity in Extreme Research Settings"
+    venue: Strategic Management Journal
+    volume: "38"
+    issue: "2"
+    pages: "471–482"
+    doi: 10.1002/smj.2497
+  - category: journal
+    authors: "Kor, Y., Mahoney, J., Siemsen, E., Tan, D."
+    year: 2016
+    title: "Penrose’s ‘The Theory of the Growth of the Firm’: An Exemplar of Engaged Scholarship"
+    venue: Production and Operations Management
+    volume: "25"
+    issue: "10"
+    pages: "1727–1744"
+    doi: 10.1111/poms.12572
+  - category: journal
+    authors: "Kremer, M., Siemsen, E., Thomas, D."
+    year: 2016
+    title: "The Sum and its Parts: Judgmental Hierarchical Forecasting"
+    venue: Management Science
+    volume: "62"
+    issue: "9"
+    pages: "2745–2764"
+    doi: 10.1287/mnsc.2015.2259
+  - category: journal
+    authors: "Gray, J., Siemsen, E., Vasudeva, G."
+    year: 2015
+    title: "Colocation Matters: Conformance Quality and the Interdependence of R&D and Manufacturing in the Pharmaceutical Industry"
+    venue: Management Science
+    volume: "61"
+    issue: "11"
+    pages: "2760–2781"
+    doi: 10.1287/mnsc.2014.2104
+  - category: journal
+    authors: "Seifert, M., Siemsen, E., Hadida, A., Eisingerich, A."
+    year: 2015
+    title: "Effective Judgmental Forecasting in the Context of Fashion Products"
+    venue: Journal of Operations Management
+    volume: "36"
+    pages: "33–45"
+    doi: 10.1016/j.jom.2015.02.001
+  - category: journal
+    authors: "Jones-Christensen, L., Siemsen, E., Balasubramanian, S."
+    year: 2015
+    title: "Consumer Behavior Change at the Base of the Pyramid: Bridging the Gap Between For-Profit and Social-Responsibility Strategies"
+    venue: Strategic Management Journal
+    volume: "36"
+    issue: "2"
+    pages: "307–317"
+    doi: 10.1002/smj.2249
+  - category: journal
+    authors: "Moritz, B., Kremer, M., Siemsen, E."
+    year: 2014
+    title: "Deliberate or Intuitive: Decision Speed and Cognitive Reflection in Demand Forecasting Behavior"
+    venue: Production and Operations Management
+    volume: "23"
+    issue: "7"
+    pages: "1146–1160"
+    doi: 10.1111/poms.12105
+  - category: journal
+    authors: "Anand, G., Gray, J., Siemsen, E."
+    year: 2012
+    title: "Decay, Shock, and Renewal: Process Entropy and Quality Control in the Pharmaceutical Industry"
+    venue: Organization Science
+    volume: "23"
+    issue: "6"
+    pages: "1700–1716"
+    doi: 10.1287/orsc.1110.0709
+  - category: journal
+    authors: "Kremer, M., Moritz, B., Siemsen, E."
+    year: 2011
+    title: "Demand Forecasting Behavior: System Neglect and Change Detection"
+    venue: Management Science
+    volume: "57"
+    issue: "10"
+    pages: "1827–1843"
+    doi: 10.1287/mnsc.1110.1382
+  - category: journal
+    authors: "Katok, E., Siemsen, E."
+    year: 2011
+    title: "Why Genius Leads to Adversity: Experimental Evidence on the Reputational Effects of Task Difficulty Choices"
+    venue: Management Science
+    volume: "57"
+    issue: "6"
+    pages: "1042–1054"
+    doi: 10.1287/mnsc.1110.1331
+  - category: journal
+    authors: "Siemsen, E., Roth, A., Oliveira, P."
+    year: 2009
+    title: "Common Method Bias in Regression Models with Linear, Quadratic, and Interaction Effects"
+    venue: Organizational Research Methods
+    volume: "13"
+    issue: "3"
+    pages: "456–476"
+    doi: 10.1177/1094428109351241
+  - category: journal
+    authors: "Siemsen, E., Roth, A., Balasubramanian, S., Anand, G."
+    year: 2009
+    title: "The Influence of Psychological Safety and Confidence on Employee Knowledge Sharing"
+    venue: Manufacturing and Service Operations Management
+    volume: "11"
+    issue: "3"
+    pages: "429–447"
+    doi: 10.1287/msom.1080.0233
+  - category: journal
+    authors: "Siemsen, E."
+    year: 2008
+    title: "The Hidden Perils of Career Concerns in R&D Organizations"
+    venue: Management Science
+    volume: "54"
+    issue: "5"
+    pages: "863–877"
+    note: Lead Article
+    doi: 10.1287/mnsc.1070.0797
+  - category: journal
+    authors: "Siemsen, E., Roth, A., Balasubramanian, S."
+    year: 2008
+    title: "How Motivation, Opportunity and Ability Drive Knowledge Sharing: The Constraining Factor Model"
+    venue: Journal of Operations Management
+    volume: "26"
+    issue: "3"
+    pages: "426–445"
+    doi: 10.1016/j.jom.2007.09.001
+  - category: journal
+    authors: "Siemsen, E., Balasubramanian, S., Roth, A."
+    year: 2007
+    title: "Incentives that Induce Task-Related Effort, Helping and Knowledge Sharing in Workgroups"
+    venue: Management Science
+    volume: "53"
+    issue: "10"
+    pages: "1533–1550"
+    doi: 10.1287/mnsc.1070.0714
+  - category: journal
+    authors: "Siemsen, E., Bollen, K."
+    year: 2007
+    title: "LAD: An Alternative Estimator for Structural Equation Models"
+    venue: Sociological Methods and Research
+    volume: "36"
+    issue: "2"
+    pages: "227–265"
+    doi: 10.1177/0049124107301946
+
+  # ---------- Other Publications (books, chapters, editorials) ----------
+  - category: other
+    authors: "Kolassa, S., Rostami-Talbar, B., Siemsen, E."
+    year: 2023
+    title: "Demand Forecasting for Executives and Professionals"
+    venue: CRC Press
+    url: https://dfep.netlify.app/
+    doi: 10.1201/9781003399599
+  - category: other
+    authors: "Petropoulos, F., Siemsen, E."
+    year: 2022
+    title: "Representativeness: A New Criterion for Selecting Forecasts"
+    venue: Foresight
+    volume: "65"
+    pages: "5–12"
+  - category: other
+    authors: "Nelson-Sanford, B., Siemsen, E."
+    year: 2020
+    title: "A Short History of STEM Designation in MBA Programs"
+    venue: OR/MS Today
+    volume: "47"
+    issue: "6"
+  - category: other
+    authors: "Goodwin, P., Moritz, B., Siemsen, E."
+    year: 2018
+    title: "Chapter 11: Forecast Decisions"
+    venue: "Handbook of Behavioral Operations (Katok, E., Donohue, K., Leider, S., eds.)"
+    doi: 10.1002/9781119138341.ch12
+  - category: other
+    authors: "Ben-Ner, A., Siemsen, E."
+    year: 2017
+    title: "Decentralization and Localization of Production: The Organizational and Economic Consequences of Additive Manufacturing"
+    venue: California Management Review
+    volume: "59"
+    issue: "2"
+    pages: "1–19"
+    note: Lead Article
+    doi: 10.1177/0008125617695284
+  - category: other
+    authors: "Kolassa, S., Siemsen, E."
+    year: 2016
+    title: "Demand Forecasting for Managers"
+    venue: Business Expert Press
+  - category: other
+    authors: "Croson, R., Schultz, K., Siemsen, E., Yeo, L."
+    year: 2013
+    title: "Behavioral Operations: The State of the Field"
+    venue: Journal of Operations Management
+    volume: "31"
+    issue: "1–2"
+    pages: "1–5"
+    doi: 10.1016/j.jom.2012.12.001
+  - category: other
+    authors: "Siemsen, E."
+    year: 2011
+    title: "The Usefulness of Behavioral Laboratory Experiments"
+    venue: Journal of Supply Chain Management
+    volume: "47"
+    issue: "3"
+    pages: "17–18"
+    doi: 10.1111/j.1745-493x.2011.03227.x
+  - category: other
+    authors: "Donohue, K., Siemsen, E."
+    year: 2009
+    title: "Behavioral Operations: Applications in Supply Chain Management"
+    venue: Wiley Encyclopedia of Operations Research and Management Science
+    doi: 10.1002/9780470400531.eorms0103
+  - category: other
+    authors: "Siemsen, E."
+    year: 2009
+    title: "That Thing Called Be-Op’s: Behavioral Operations Emerges into the Mainstream"
+    venue: POMS Chronicle
+    volume: "16"
+    issue: "1"
+    pages: "12–13"
+
+  # ---------- Working Papers ----------
+  - category: working
+    authors: "Siemsen, E., Spiliotopoulou, E."
+    title: "Chicken or the Egg? Forecast and Order Adjustments in Supply-Chain Planning"
+    note: Revise & Resubmit at Management Science
+    doi: 10.2139/ssrn.5017861
+  - category: working
+    authors: "Carraro, M., Mohadikar, M., Upadhyay, A., Wuttke, D., Siemsen, E."
+    title: "When You Get What You Want, but Not What You Need: Digital versus Traditional Resources"
+    note: Revise & Resubmit at Management Science
+  - category: working
+    authors: "Mohadikar, M., Wuttke, D., Siemsen, E."
+    title: "It Takes Two to Troubleshoot: Technician-Expert Dyads and Augmented Reality in Remote Maintenance Tasks"
+  - category: working
+    authors: "Niranjan, T. T., Shah, H., Siemsen, E."
+    title: "To Have and Not to Hold: A Note on Supply Line Underweighting"
+  - category: working
+    authors: "Abolghasemi, M., Petropoulos, F., Siemsen, E."
+    title: "Forecast Reconciliation vs. Decision Reconciliation"
+  - category: working
+    authors: "Feng, K., Zhang, M., Roehrich, J., Siemsen, E."
+    title: "The Unbearable Lightness of Nudging: Preventing Data Leaks for Generative AI Users"
+  - category: working
+    authors: "Petropoulos, F., Girolimetto, D., Spiliotis, E., Siemsen, E."
+    title: "Veto Model Selection"
+
+# ---------------------------------------------------------------------
+repositories:
+  - url: https://github.com/siemsene/resilience
+    description: Open source supply resilience game
+  - url: https://github.com/siemsene/emergencydepartment
+    description: Open source online queuing game
+  - url: https://github.com/siemsene/beergame
+    description: Open source online beer game
+  - url: https://github.com/siemsene/newsvendor
+    description: Open source newsvendor game
+  - url: https://github.com/siemsene/PollPosition
+    description: Classroom polling software
+
+websites:
+  - url: https://edutool.org/
+    description: Website to share classroom apps
+  - url: https://blog.edutool.org/
+    description: Blog about vibe coding apps
+  - url: https://omlist.edutool.org/
+    description: Directory of all faculty in OM/SCM
+
+# ---------------------------------------------------------------------
+editorial:
+  - journal: Manufacturing & Service Operations Management
+    roles:
+      - role: Associate Editor
+        years: "2024–"
+      - role: Guest Associate Editor
+        years: "2019–2024"
+  - journal: Management Science
+    roles:
+      - role: Associate Editor
+        years: "2025–"
+      - role: Guest Associate Editor
+        years: "2009–2010"
+  - journal: Production and Operations Management — Department Editor
+    roles:
+      - role: Global Operations Strategy Department
+        years: "2013–2019"
+      - role: Behavioral Operations Department
+        years: "2025–"
+  - journal: Production and Operations Management — Senior Editor
+    roles:
+      - role: Behavioral Operations
+        years: "2024–2025"
+      - role: Global Operations Strategy Department
+        years: "2020–2025"
+      - role: Management of Technology Department
+        years: "2011–2013"
+      - role: New Product Development Department
+        years: "2010–2016"
+      - role: Operations Strategy & Flexibility Department
+        years: "2007–2013"
+  - journal: Journal of Operations Management
+    roles:
+      - role: Associate Editor
+        years: "2010–"
+      - role: "Invited Editor, Special Issue on Behavioral Operations (with Ken Schultz and Rachel Croson; published February 2013)"
+        years: "2011"
+  - journal: Decision Sciences Journal
+    roles:
+      - role: "Department Editor — Behavioral Operations & Supply Chain Management Department"
+        years: "2017–2025"
+      - role: Associate Editor
+        years: "2010–2017"
+  - journal: International Journal of Production Management
+    roles:
+      - role: Associate Editor
+        years: "2026–"
+  - journal: Naval Research Logistics
+    roles:
+      - role: Associate Editor
+        years: "2019–"
+  - journal: Supply Chain Management Journal
+    roles:
+      - role: Associate Editor
+        years: "2017–"
+  - journal: Omega
+    roles:
+      - role: "Co-editor, Special Issue on Human Judgment in Forecasting"
+        years: "2017–2018"
+
+ad_hoc_reviewing: >-
+  Ad-hoc reviewer for Management Science, Manufacturing and Service Operations Management,
+  IEEE Transactions on Engineering Management, European Journal of Operational Research,
+  Logistics and Transportation Review, Asia-Pacific Journal of Operational Research, Omega,
+  Decision Support Systems, Organizational Research Methods, International Journal of Forecasting,
+  Journal of Applied Psychology, International Journal of Management Reviews, International Journal
+  of Logistics Management, Economics Letters, Basic and Applied Social Psychology, and
+  Organizational Behavior and Human Decision Processes.
+
+# ---------------------------------------------------------------------
+doctoral_students:
+  - name: Brent Moritz
+    institution: University of Minnesota
+    role: Committee Member
+    year: "’10"
+    placement: "Placed at Penn State University"
+  - name: Yinghao Zhang
+    institution: University of Minnesota
+    role: Committee Member
+    year: "’14"
+    placement: "Placed at Salisbury University, now at University of Cincinnati"
+  - name: George Ball
+    institution: University of Minnesota
+    role: Committee Member
+    year: "’15"
+    placement: "Placed at Indiana University Bloomington"
+  - name: Suvrat Dhanorkar
+    institution: University of Minnesota
+    role: Committee Member
+    year: "’15"
+    placement: "Placed at Penn State University"
+  - name: Ujjal Mukherjee
+    institution: University of Minnesota
+    role: Committee Member
+    year: "’15"
+    placement: "Placed at University of Illinois"
+  - name: Stefanie Protzner
+    institution: Erasmus University Rotterdam
+    role: Committee Member
+    year: "’16"
+    placement: "Placed at H.C. Starck"
+  - name: Pettis Kent
+    institution: University of Minnesota
+    role: Advisor
+    year: "’18"
+    placement: "Placed at Loyola University Chicago, now at the University of Memphis"
+  - name: Thomas Mulholland
+    institution: University of Wisconsin–Madison (Mechanical Engineering)
+    role: Committee Member
+    year: "’18"
+    placement: "Working at startup"
+  - name: Mahdi Mahmoudzadeh
+    institution: Georgia Tech
+    role: Committee Member
+    year: "’20"
+    placement: "Placed at University of Auckland"
+  - name: Rebekah Brau
+    institution: University of Arkansas
+    role: Committee Member
+    year: "’20"
+    placement: "Placed at Brigham Young University"
+
+# ---------------------------------------------------------------------
+society_leadership:
+  - org: Minnesota Patient Innovation Forum
+    roles:
+      - "Conference Chair (2014)"
+  - org: INFORMS Behavioral Operations Management Section
+    roles:
+      - "Treasurer (2007–2008)"
+      - "Secretary (2008–2010)"
+      - "Vice President (2010–2012)"
+      - "President (2012–2014)"
+  - org: POM College of Product Innovation and Technology Management
+    roles:
+      - "Chair for Special Events (2010–2011)"
+      - "Co Program Chair for Mini-Conference (November 2011)"
+  - org: INFORMS
+    roles:
+      - "Arrangements Co-Chair, Annual Conference 2013"
+
+prize_committees:
+  - "M&SOM Responsible Research in OM Award, Judge, 2024"
+  - "INFORMS Behavioral Operations Best Working Paper Award, Judge/Committee Member, 2013, 2014, 2016, 2017, 2019, 2020"
+  - "JOM Best Published Paper Award, Nominator, 2014"
+  - "INFORMS JFIG Best Working Paper Competition, Judge, 2013, 2014"
+  - "POMS College of Supply Chain Student Paper Competition, Judge/Committee Member, 2008, 2010, 2011, 2013, 2016, 2017"
+  - "MSOM Student Paper Competition, Judge, 2006–2010"
+  - "DSI Doctoral Dissertation Competition, Judge, 2008, 2011"
+  - "Juran Fellowship Awards, Judge, 2006–2010"
+
+# ---------------------------------------------------------------------
+invited_talks:
+  - title: "It Takes Two to Troubleshoot: Technician-Expert Teams and Augmented Reality in Repair Operations"
+    venues: "University of Tilburg, 9/25/25; TUM, 10/6/25; Nova SBE, 11/3/25; Koc University, 11/28/25; University of Bath, 12/9/25; ETH Zurich, 2/17/26; University College London, 3/16/26; IE Business School, 4/17/26; ESMT, 5/6/26; IESE Business School, 5/21/26."
+  - title: "Forecast vs. Order Adjustments"
+    venues: "Oregon State University, 3/8/24; University of Bath, 7/9/24; Dartmouth, 11/14/24; INSEAD, 3/12/25; HEC, 3/14/25."
+  - title: "Ramping up Production with the Use of Augmented Reality"
+    venues: "Boston University, 2/6/20; University of Liverpool, 3/6/20; UW-Madison, 12/1/20; Erasmus University Rotterdam, 3/28/22; Tilburg University, 3/29/22; UMN-Duluth, 10/6/22; University of Maastricht, 7/4/24."
+  - title: "Production Process Moves: Template Use and the Need to Adapt"
+    venues: "George Washington University, 11/3/17; Rutgers University, 12/8/17; Georgetown University, 5/25/18; Arizona State University, 10/12/18; University College London, 3/1/19; City University New York, 4/2/19; Iowa State University, 4/19/19."
+  - title: "Behavioral Inventory Sharing"
+    venues: "University of Illinois, Urbana-Champaign, 9/14/16; University of Arkansas, Fayetteville, 10/14/16; University of Wisconsin-Madison, 2/28/17; University of Chicago, 5/2/17; Fudan University, 5/24/17; Shanghai Jiao Tong University, 5/26/17."
+  - title: "Response Pattern Analysis"
+    venues: "University of Wisconsin-Madison, 3/14/16."
+  - title: "Inspector Experience and Product Recalls in the Medical Device Industry"
+    venues: "University of Wisconsin-Madison, 3/20/15; Singapore University of Technology & Design, 12/14/15; TU Eindhoven, 1/7/16; Erasmus University Rotterdam, 1/8/16."
+  - title: "Task Decomposition in the Newsvendor Experiment"
+    venues: "Harvard Business School, 4/11/13; Southwest University of Finance and Economics, 6/13/13; University of South Carolina, 10/10/14; Singapore University of Technology & Design, 12/16/15; Tianjin University, 12/19/15; Georgia Tech, 2/26/16."
+  - title: "The Sum and its Parts: A Behavioral Investigation of Top-Down and Bottom-Up Forecasting Processes"
+    venues: "Judge School of Business, 7/20/12; Naveen Jindal School of Management, UT Dallas, 11/8/12; European Business School, Wiesbaden, 8/31/13; University of Bath, 9/2/13; Cornell University, 9/13/13; Ohio State University, 4/7/14."
+  - title: "The Manufacturing Quality Implications of Collocating R&D and Manufacturing"
+    venues: "Judge School of Business, 10/24/11; Carlson Summer Econometrics Series, 5/31/12; University of Cologne, 8/20/13; University of California, Berkeley, 11/8/13; Swiss Federal Institute of Technology Zurich, 6/3/14."
+  - title: "Project Ambiguity in Fluid Design Teams"
+    venues: "Carlson School of Management, 10/22/10."
+  - title: "Behavioral Demand Forecasting"
+    venues: "Carlson School of Management, 12/11/09; University of Alberta, 6/11/10; Darden School of Business, 11/16/10."
+  - title: "Common Method Bias in Regression Models with Linear, Quadratic and Interaction Effects"
+    venues: "Instituto de Empresa, Madrid, 9/17/09."
+  - title: "Organizational Entropy"
+    venues: "Carlson School of Management, 4/24/09."
+  - title: "The Hidden Perils of Career Concerns in R&D Organizations"
+    venues: "Georgia Institute of Technology, 12/10/07; European School of Management and Technology, 1/9/08; National University of Singapore, 1/22/08; University of Michigan, 2/1/08; University of Minnesota, 2/7/08; Emory University, 2/12/08; Harvard University, 2/14/08; London Business School, 2/21/08; INSEAD, 3/14/08; Ohio State University, 1/26/06."
+
+# ---------------------------------------------------------------------
+# Teaching. Rating is shown as-is (varying scales across schools).
+teaching_note: >-
+  Listed on the Illinois List of Teachers Ranked as Excellent for Fall ’05,
+  Spring ’06, Fall ’06 and Spring ’07.
+teaching:
+  - { semester: "Spring ’26", course: "Ops. and Sup. Chain Mgmt (Lisbon MBA)", role: Instructor, rating: "6.78/7.00" }
+  - { semester: "Spring ’25", course: "Transition to Executive Management (Exec Ed)", role: Instructor, rating: "7.0/7.0" }
+  - { semester: "Spring ’25", course: "Operations & Supply Chain (Custom Exec Ed)", role: Instructor, rating: "6.8/7.0" }
+  - { semester: "Fall ’24", course: "GB 656: Machine Learning for Bus. Analytics", role: Instructor, rating: "4.8/5.0" }
+  - { semester: "Fall ’24", course: "GB 656: Machine Learning for Bus. Analytics", role: Instructor, rating: "4.4/5.0" }
+  - { semester: "Fall ’24", course: "GB 656: Machine Learning for Bus. Analytics", role: Instructor, rating: "4.4/5.0" }
+  - { semester: "Fall ’24", course: "Sales & Operations Planning (Custom Exec Ed)", role: Instructor, rating: "—" }
+  - { semester: "Spring ’24", course: "Transition to Executive Management (Exec Ed)", role: Instructor, rating: "7.0/7.0" }
+  - { semester: "Fall ’23", course: "Sales & Operations Planning (Custom Exec Ed)", role: Instructor, rating: "9.0/10.0" }
+  - { semester: "Summer ’23", course: "Transition to Executive Management (Exec Ed)", role: Instructor, rating: "7.0/7.0" }
+  - { semester: "Spring ’23", course: "Transition to Executive Management (Exec Ed)", role: Instructor, rating: "6.9/7.0" }
+  - { semester: "Fall ’22", course: "Sales & Operations Planning (Custom Exec Ed)", role: Instructor, rating: "9.0/10.0" }
+  - { semester: "Spring ’22", course: "Transition to Executive Management (Exec Ed)", role: Instructor, rating: "6.9/7.0" }
+  - { semester: "Fall ’21", course: "Project Portfolio Management (Exec Ed)", role: Instructor, rating: "6.5/7.0" }
+  - { semester: "Fall ’21", course: "OTM 752 (EMBA Project Management)", role: Instructor, rating: "4.1/5.0" }
+  - { semester: "Fall ’21", course: "OTM 752 (MSBA Project Management)", role: Instructor, rating: "4.7/5.0" }
+  - { semester: "Fall ’21", course: "OTM 752 (MSBA Project Management)", role: Instructor, rating: "4.5/5.0" }
+  - { semester: "Spring ’21", course: "Transition to Executive Management (Exec Ed)", role: Instructor, rating: "6.9/7.0" }
+  - { semester: "Spring ’21", course: "OTM 752 (EvMBA Project Management)", role: Instructor, rating: "4.8/5.0" }
+  - { semester: "Fall ’20", course: "OTM 752 (EMBA Project Management)", role: Instructor, rating: "4.5/5.0" }
+  - { semester: "Fall ’20", course: "OTM 752 (MSBA Project Management)", role: Instructor, rating: "4.8/5.0" }
+  - { semester: "Spring ’20", course: "OTM 752 (EvMBA Project Management)", role: Instructor, rating: "4.8/5.0" }
+  - { semester: "Fall ’19", course: "OTM 752 (EMBA Project Management)", role: Instructor, rating: "4.3/5.0" }
+  - { semester: "Fall ’19", course: "OTM 752 (MSBA Project Management)", role: Instructor, rating: "4.0/5.0" }
+  - { semester: "Fall ’19", course: "OTM 752 (MBA Project Management)", role: Instructor, rating: "4.5/5.0" }
+  - { semester: "Summer ’19", course: "S&OP and Operations Strategy (Exec Ed)", role: Instructor, rating: "6.6/7.0" }
+  - { semester: "Spring ’19", course: "Transition to Executive Management (Exec Ed)", role: Instructor, rating: "6.2/7.0" }
+  - { semester: "Fall ’18", course: "OTM 752 (MBA Project Management)", role: Instructor, rating: "4.9/5.0" }
+  - { semester: "Fall ’18", course: "Sales & Operations Planning (Exec Ed)", role: Instructor, rating: "6.6/7.0" }
+  - { semester: "Spring ’18", course: "Transition to Executive Management (Exec Ed)", role: Instructor, rating: "6.7/7.0" }
+  - { semester: "Fall ’17", course: "OTM 365 (BBA Project Management)", role: Instructor, rating: "4.7/5.0" }
+  - { semester: "Fall ’17", course: "OTM 765 (MBA Project Management)", role: Instructor, rating: "4.8/5.0" }
+  - { semester: "Spring ’17", course: "OTM 365 (BBA Project Management)", role: Instructor, rating: "4.8/5.0" }
+  - { semester: "Spring ’17", course: "Sales & Operations Planning (Exec Ed)", role: Instructor, rating: "—" }
+  - { semester: "Spring ’17", course: "Sales & Operations Planning (Exec Ed)", role: Instructor, rating: "7.0/7.0" }
+  - { semester: "Spring ’17", course: "Transition to Executive Management (Exec Ed)", role: Instructor, rating: "6.8/7.0" }
+  - { semester: "Fall ’16", course: "Sales & Operations Planning (Exec Ed)", role: Instructor, rating: "6.7/7.0" }
+  - { semester: "Fall ’16", course: "Sales & Operations Planning (Exec Ed)", role: Instructor, rating: "6.7/7.0" }
+  - { semester: "Spring ’16", course: "OTM 365 (BBA Project Management)", role: Instructor, rating: "4.9/5.0" }
+  - { semester: "Fall ’15", course: "VMBA 5705 (Gl. Exec. MBA Operations)", role: Instructor, rating: "5.5/6.0" }
+  - { semester: "Spring ’15", course: "SCO 6081 (MBA: Global Operations Strategy)", role: Instructor, rating: "5.7/6.0" }
+  - { semester: "Spring ’15", course: "SCO 6850 (MBA: Sales & Operations Planning)", role: Instructor, rating: "5.8/6.0" }
+  - { semester: "Fall ’14", course: "VMBA 5705 (Gl. Exec. MBA Operations)", role: Instructor, rating: "5.8/6.0" }
+  - { semester: "Fall ’14", course: "CMBA 5614 (Exec. MBA Operations)", role: Instructor, rating: "5.1/6.0" }
+  - { semester: "Spring ’14", course: "SCO 6850 (MBA: Sales & Operations Planning)", role: Instructor, rating: "5.4/6.0" }
+  - { semester: "Spring ’14", course: "SCO 6041 (MBA: Project Management)", role: Instructor, rating: "5.5/6.0" }
+  - { semester: "Fall ’13", course: "VMBA 5705 (Gl. Exec. MBA Operations)", role: Instructor, rating: "5.5/6.0" }
+  - { semester: "Fall ’13", course: "CMBA 5614 (Exec. MBA Operations)", role: Instructor, rating: "5.4/6.0" }
+  - { semester: "Fall ’13", course: "SCO 6041 (MBA: Project Management)", role: Instructor, rating: "5.5/6.0" }
+  - { semester: "Fall ’13", course: "SCO 6041 (MBA: Project Management)", role: Instructor, rating: "5.5/6.0" }
+  - { semester: "Summer ’13", course: "Cologne Summer School (BA: Project Man.)", role: Instructor, rating: "5.5/6.0" }
+  - { semester: "Spring ’13", course: "SCO 6081 (MBA: Global Operations Strategy)", role: Instructor, rating: "5.6/6.0" }
+  - { semester: "Spring ’13", course: "SCO 6041 (MBA: Project Management)", role: Instructor, rating: "5.9/6.0" }
+  - { semester: "Fall ’12", course: "VMBA 5705 (Gl. Exec. MBA Operations)", role: Instructor, rating: "5.5/6.0" }
+  - { semester: "Fall ’12", course: "SCO 6041 (MBA: Project Management)", role: Instructor, rating: "5.7/6.0" }
+  - { semester: "Fall ’12", course: "SCO 6081 (MBA: Global Operations Strategy)", role: Instructor, rating: "5.5/6.0" }
+  - { semester: "Spring ’12", course: "OMS 6041 (MBA: Project Management)", role: Instructor, rating: "5.6/6.0" }
+  - { semester: "Spring ’12", course: "OMS 6041 (MBA: Project Management)", role: Instructor, rating: "5.6/6.0" }
+  - { semester: "Fall ’11", course: "OMS 6041 (MBA: Project Management)", role: Instructor, rating: "5.7/6.0" }
+  - { semester: "Spring ’11", course: "OMS 3001 (BA: Operations Management)", role: Instructor, rating: "5.0/6.0" }
+  - { semester: "Spring ’11", course: "OMS 6041 (MBA: Project Management)", role: Instructor, rating: "5.5/6.0" }
+  - { semester: "Fall ’10", course: "OMS 6041 (MBA: Project Management)", role: Instructor, rating: "5.3/6.0" }
+  - { semester: "Summer ’10", course: "OMS 6041 (MBA: Project Management)", role: Instructor, rating: "5.4/6.0" }
+  - { semester: "Spring ’10", course: "OMS 3001 (BA: Operations Management)", role: Instructor, rating: "5.2/6.0" }
+  - { semester: "Spring ’10", course: "OMS 3001 (BA: Operations Management)", role: Instructor, rating: "5.4/6.0" }
+  - { semester: "Spring ’10", course: "OMS 3001 (BA: Operations Management)", role: Instructor, rating: "5.2/6.0" }
+  - { semester: "Spring ’10", course: "OMS 6041 (MBA: Project Management)", role: Instructor, rating: "5.4/6.0" }
+  - { semester: "Spring ’09", course: "OMS 3001 (BA: Operations Management)", role: Instructor, rating: "4.8/6.0" }
+  - { semester: "Spring ’09", course: "OMS 3001 (BA: Operations Management)", role: Instructor, rating: "5.1/6.0" }
+  - { semester: "Spring ’09", course: "OMS 3001 (BA: Operations Management)", role: Instructor, rating: "5.7/6.0" }
+  - { semester: "Spring ’08", course: "BA 590 (MBA: Operations Strategy)", role: Instructor, rating: "4.5/5.0" }
+  - { semester: "Fall ’07", course: "BA 460 (BA: Business Process Management)", role: Instructor, rating: "4.3/5.0" }
+  - { semester: "Spring ’07", course: "BA 590 (MBA: Operations Strategy)", role: Instructor, rating: "4.7/5.0" }
+  - { semester: "Fall ’06", course: "BA 375 (BA: Business Process Management)", role: Instructor, rating: "4.6/5.0" }
+  - { semester: "Fall ’06", course: "BA 460 (BA: Business Process Management)", role: Instructor, rating: "4.8/5.0" }
+  - { semester: "Spring ’06", course: "BA 590 (MBA: Operations Strategy)", role: Instructor, rating: "4.7/5.0" }
+  - { semester: "Fall ’05", course: "BA 460 (BA: Business Process Management)", role: Instructor, rating: "4.7/5.0" }
+  - { semester: "Summer ’04", course: "BA 130 (BA: Operations Management)", role: Instructor, rating: "4.7/5.0" }
+  - { semester: "Spring ’04", course: "BA 130 (BA: Operations Management)", role: Instructor, rating: "—" }
+  - { semester: "Fall ’00", course: "Microeconomics I", role: TA, rating: "—" }
+  - { semester: "Fall ’99", course: "Macroeconomics I", role: TA, rating: "—" }
