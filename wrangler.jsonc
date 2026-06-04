@@ -4,6 +4,10 @@
   // (and keep the siemsen.edutool.org custom domain attached).
   "name": "siemsen-cv",
   "compatibility_date": "2026-06-01",
+  // Serve only via the custom domain (siemsen.edutool.org); turn off the
+  // public *.workers.dev address and per-version preview URLs.
+  "workers_dev": false,
+  "preview_urls": false,
   "assets": {
     "directory": "./dist"
   }
