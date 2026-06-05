@@ -74,7 +74,7 @@
   let iss = field(it, "issue")
   let coords = if vol != none { vol + if iss != none { "(" + iss + ")" } else { "" } } else { none }
   let venue-bits = ((field(it, "venue"), coords, field(it, "pages")).filter(x => x != none)).join(", ")
-  block(below: 0.7em, {
+  block(below: 0.9em, {
     authors(it.authors)
     if field(it, "year") != none [ (#str(it.year)). ] else [. ]
     [*#it.title.* ]
@@ -156,10 +156,10 @@
 #for it in data.publications.filter(x => x.category == "working") {
   let target = field(it, "url")
   if target == none and field(it, "doi") != none { target = "https://doi.org/" + it.doi }
-  block(below: 0.65em, {
-    if target != none { link(target)[*#it.title.*] } else [*#it.title.*]
-    [ ]
+  block(below: 0.9em, {
     authors(it.authors)
+    if field(it, "year") != none [ (#str(it.year)). ] else [ ]
+    if target != none { link(target)[*#it.title.*] } else [*#it.title.*]
     if field(it, "note") != none [ #text(fill: accent, size: 8.5pt, font: sans)[ · #it.note]]
   })
 }
