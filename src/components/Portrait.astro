@@ -1,0 +1,49 @@
+---
+// Random portrait shown at the top of the sidebar (web only — not in the PDF).
+// Every photo in /photos is optimized to a small WebP at build time; the browser
+// then picks one at random per visit and fetches only that single image.
+import { getImage } from 'astro:assets';
+
+const mods = import.meta.glob<{ default: ImageMetadata }>(
+  '/photos/*.{png,jpg,jpeg,webp}',
+  { eager: true },
+);
+const imgs = Object.values(mods).map((m) => m.default);
+const optimized = await Promise.all(
+  imgs.map((src) => getImage({ src, width: 720, format: 'webp' })),
+);
+const urls = optimized.map((o) => o.src);
+const fallback = urls[0];
+---
+
+<div
+  class="relative aspect-[4/5] w-40 overflow-hidden rounded-2xl bg-line/40 ring-1 ring-line"
+>
+  <img
+    alt="Enno Siemsen"
+    class="absolute inset-0 h-full w-full object-cover object-center"
+    decoding="async"
+    fetchpriority="high"
+    width="720"
+    height="900"
+  />
+  {fallback && (
+    <noscript>
+      <img
+        src={fallback}
+        alt="Enno Siemsen"
+        class="absolute inset-0 h-full w-full object-cover object-center"
+        width="720"
+        height="900"
+      />
+    </noscript>
+  )}
+</div>
+<script is:inline define:vars={{ urls }}>
+  // Pick one optimized photo at random so only that image is downloaded.
+  const box = document.currentScript.previousElementSibling;
+  const el = box && box.querySelector('img');
+  if (el && urls.length) {
+    el.src = urls[(Math.random() * urls.length) | 0];
+  }
+</script>

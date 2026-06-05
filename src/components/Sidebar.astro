@@ -1,4 +1,5 @@
 ---
+import Portrait from './Portrait.astro';
 import { cv, SECTIONS } from '../data/cv';
 const { profile, metrics } = cv;
 
@@ -16,6 +17,9 @@ const stats = [
   <div class="lg:flex lg:min-h-0 lg:flex-1 lg:flex-col">
     <!-- Identity -->
     <div class="reveal" style="--d:0ms">
+      <div class="mb-5">
+        <Portrait />
+      </div>
       <a href="#about" class="group inline-block">
         <h1
           class="font-display text-[2.6rem] font-medium leading-[0.98] tracking-[-0.02em] text-ink sm:text-5xl"
