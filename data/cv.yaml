@@ -29,6 +29,12 @@ profile:
       url: https://github.com/siemsene
     - label: OpenAlex
       url: https://openalex.org/A5086167634
+    - label: Google Scholar
+      url: https://scholar.google.com/citations?user=UBbcB10AAAAJ&hl=en
+    - label: LinkedIn
+      url: https://www.linkedin.com/in/enno-siemsen/
+    - label: Wisconsin Profile
+      url: https://business.wisc.edu/directory/profile/enno-siemsen/
 
 # ---------------------------------------------------------------------
 positions:
