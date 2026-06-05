@@ -14,7 +14,7 @@ const stats = [
 <aside
   class="lg:sticky lg:top-0 lg:flex lg:h-screen lg:max-h-screen lg:flex-col lg:py-12"
 >
-  <div class="lg:flex lg:min-h-0 lg:flex-1 lg:flex-col">
+  <div class="sidebar-scroll lg:min-h-0 lg:flex-1 lg:overflow-y-auto lg:pr-3">
     <!-- Identity -->
     <div class="reveal" style="--d:0ms">
       <div class="mb-5">
@@ -67,7 +67,7 @@ const stats = [
     </a>
 
     <!-- Section nav (desktop) -->
-    <nav class="reveal mt-10 hidden lg:block lg:min-h-0 lg:flex-1 lg:overflow-y-auto" style="--d:240ms" aria-label="Sections">
+    <nav class="reveal mt-10 hidden lg:block" style="--d:240ms" aria-label="Sections">
       <ul class="space-y-1.5">
         {SECTIONS.map((s) => (
           <li>
