@@ -11,7 +11,7 @@ import yaml from 'js-yaml';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const cv = yaml.load(readFileSync(resolve(__dirname, '../data/cv.yaml'), 'utf8'));
 const authorId = cv?.profile?.openalex_author_id;
-const MAILTO = 'siemsene@gmail.com';
+const MAILTO = 'esiemsen@wisc.edu';
 
 const rows = [];
 let cursor = '*';

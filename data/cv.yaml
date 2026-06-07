@@ -16,7 +16,6 @@ profile:
     studying how people and analytics together make better operational decisions.
   # OpenAlex author used for live citation metrics + per-paper counts.
   openalex_author_id: A5086167634
-  # TODO: confirm your preferred public contact email.
   email: esiemsen@wisc.edu
   links:
     - label: edutool.org

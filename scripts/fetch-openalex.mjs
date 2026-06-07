@@ -15,7 +15,7 @@ const CV_PATH = resolve(root, 'data/cv.yaml');
 const OUT_PATH = resolve(root, 'data/openalex.json');
 
 // Polite-pool contact (https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication).
-const MAILTO = 'siemsene@gmail.com';
+const MAILTO = 'esiemsen@wisc.edu';
 
 const cv = yaml.load(readFileSync(CV_PATH, 'utf8'));
 const authorId = cv?.profile?.openalex_author_id;
