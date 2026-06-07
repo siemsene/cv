@@ -3,6 +3,9 @@
 A modern CV that renders as both a website ([siemsen.edutool.org](https://siemsen.edutool.org))
 and a typeset PDF, generated from **one** data file. Citation counts come live from OpenAlex.
 
+> **Want this for your own CV?** See **[FORKING.md](FORKING.md)** for a
+> step-by-step guide to forking, customizing, and hosting your own copy.
+
 ```
 data/cv.yaml ──┐
                ├─► public/cv-data.json ──► Astro website (dist/)
