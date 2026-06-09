@@ -217,6 +217,23 @@
 }
 
 // =====================================================================
+//  Advisory boards
+// =====================================================================
+#section("Advisory Board Memberships")
+#for b in data.advisory_boards {
+  entry(
+    yrange(b.start, b.at("end", default: none)),
+    {
+      let name = if field(b, "url") != none { link(b.url)[#text(weight: "bold")[#b.org]] } else { text(weight: "bold")[#b.org] }
+      name
+      linebreak()
+      text(fill: soft, size: 9.5pt)[#b.role]
+      v(0.45em)
+    },
+  )
+}
+
+// =====================================================================
 //  Doctoral students
 // =====================================================================
 #section("Doctoral Students")

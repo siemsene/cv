@@ -207,6 +207,29 @@ const currentRoles = cv.positions.filter((p) => p.end == null);
           </ul>
         </Section>
 
+        <!-- Advisory Boards -->
+        <Section id="advisory" eyebrow="Industry & Ventures" title="Advisory Board Memberships">
+          <ol class="space-y-0">
+            {cv.advisory_boards.map((b) => (
+              <li class="grid grid-cols-[5.5rem_1fr] gap-4 border-b border-dashed border-line py-3.5 last:border-0 sm:grid-cols-[7rem_1fr]">
+                <span class="pt-0.5 font-grotesk text-sm tabular-nums text-ink-faint">
+                  {yearRange(b.start, b.end ?? null)}
+                </span>
+                <div>
+                  <p class="font-serif text-[1.05rem] font-medium leading-snug text-ink">
+                    {b.url ? (
+                      <a href={b.url} target="_blank" rel="noopener" class="link-underline">{b.org}</a>
+                    ) : (
+                      b.org
+                    )}
+                  </p>
+                  <p class="text-sm leading-snug text-ink-soft">{b.role}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </Section>
+
         <!-- Doctoral Students -->
         <Section id="students" eyebrow="Mentorship" title="Doctoral Students">
           <ol class="grid gap-x-10 gap-y-5 sm:grid-cols-2">

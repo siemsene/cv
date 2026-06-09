@@ -826,6 +826,17 @@ prize_committees:
   - "Juran Fellowship Awards, Judge, 2006–2010"
 
 # ---------------------------------------------------------------------
+advisory_boards:
+  - org: Azirella
+    url: https://azirella.com
+    role: Advisory Board Member
+    start: 2026
+  - org: Scirise
+    url: https://scirise.ai
+    role: Advisory Board Member
+    start: 2025
+
+# ---------------------------------------------------------------------
 invited_talks:
   - title: "It Takes Two to Troubleshoot: Technician-Expert Teams and Augmented Reality in Repair Operations"
     venues: "University of Tilburg, 9/25/25; TUM, 10/6/25; Nova SBE, 11/3/25; Koc University, 11/28/25; University of Bath, 12/9/25; ETH Zurich, 2/17/26; University College London, 3/16/26; IE Business School, 4/17/26; ESMT, 5/6/26; IESE Business School, 5/21/26."

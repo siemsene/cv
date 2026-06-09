@@ -43,6 +43,7 @@ export interface DoctoralStudent {
   name: string; institution: string; role: string; year: string; placement?: string;
 }
 export interface SocietyLeadership { org: string; roles: string[]; }
+export interface AdvisoryBoard { org: string; url?: string; role: string; start: number; end?: number | null; }
 export interface InvitedTalk { title: string; venues: string; }
 export interface TeachingRow { semester: string; course: string; role: string; rating: string; }
 export interface Metrics {
@@ -62,6 +63,7 @@ export interface CV {
   ad_hoc_reviewing?: string;
   doctoral_students: DoctoralStudent[];
   society_leadership: SocietyLeadership[];
+  advisory_boards: AdvisoryBoard[];
   prize_committees: string[];
   invited_talks: InvitedTalk[];
   teaching_note?: string;
@@ -89,6 +91,7 @@ export const SECTIONS: { id: string; label: string }[] = [
   { id: 'awards', label: 'Awards & Grants' },
   { id: 'editorial', label: 'Editorial' },
   { id: 'service', label: 'Service' },
+  { id: 'advisory', label: 'Advisory Boards' },
   { id: 'students', label: 'Doctoral Students' },
   { id: 'talks', label: 'Invited Talks' },
   { id: 'teaching', label: 'Teaching' },
