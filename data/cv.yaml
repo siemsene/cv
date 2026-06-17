@@ -664,6 +664,8 @@ repositories:
     description: Open source newsvendor game
   - url: https://github.com/siemsene/PollPosition
     description: Classroom polling software
+  - url: https://github.com/siemsene/teamforge
+    description: Classroom team allocation software
 
 websites:
   - url: https://edutool.org/
