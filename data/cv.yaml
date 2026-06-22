@@ -568,6 +568,7 @@ publications:
     year: 2020
     title: "A Short History of STEM Designation in MBA Programs"
     venue: OR/MS Today
+    url: https://pubsonline.informs.org/do/10.1287/orms.2020.06.05/full/
     volume: "47"
     issue: "6"
   - category: other
@@ -674,6 +675,8 @@ websites:
     description: Blog about vibe coding apps
   - url: https://omlist.edutool.org/
     description: Directory of all faculty in OM/SCM
+  - url: https://dfep.netlify.app/
+    description: Website for the book "Demand Forecasting for Executives and Professionals"
 
 # ---------------------------------------------------------------------
 editorial:
@@ -877,7 +880,7 @@ teaching_note: >-
   Listed on the Illinois List of Teachers Ranked as Excellent for Fall ’05,
   Spring ’06, Fall ’06 and Spring ’07.
 teaching:
-  - { semester: "Spring ’26", course: "Ops. and Sup. Chain Mgmt (Lisbon MBA)", role: Instructor, rating: "6.78/7.00" }
+  - { semester: "Spring ’26", course: "Ops. and Sup. Chain Mgmt (Lisbon MBA)", role: Instructor, rating: "6.8/7.0" }
   - { semester: "Spring ’25", course: "Transition to Executive Management (Exec Ed)", role: Instructor, rating: "7.0/7.0" }
   - { semester: "Spring ’25", course: "Operations & Supply Chain (Custom Exec Ed)", role: Instructor, rating: "6.8/7.0" }
   - { semester: "Fall ’24", course: "GB 656: Machine Learning for Bus. Analytics", role: Instructor, rating: "4.8/5.0" }
