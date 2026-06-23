@@ -7,6 +7,32 @@ const {
   title = `${cv.profile.name} — Curriculum Vitae`,
   description = cv.profile.tagline ?? `${cv.profile.name}, ${cv.profile.title}`,
 } = Astro.props;
+
+const { profile } = cv;
+// Absolute URLs (require `site` in astro.config) for canonical/OG tags and
+// the structured-data graph.
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const ogImage = new URL('/og.jpg', Astro.site).href;
+
+// JSON-LD Person schema: tells Google this page represents the entity
+// "Enno Siemsen" and that all the linked profiles (sameAs) are the same person
+// — the basis for a Knowledge Panel and for ranking on a name search.
+const personLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${new URL('/', Astro.site).href}#person`,
+  name: profile.name,
+  url: canonical,
+  image: ogImage,
+  jobTitle: profile.title,
+  email: profile.email ? `mailto:${profile.email}` : undefined,
+  worksFor: {
+    '@type': 'CollegeOrUniversity',
+    name: profile.affiliation,
+  },
+  knowsAbout: ['Behavioral operations', 'Demand forecasting', 'Operations strategy', 'Operations management'],
+  sameAs: profile.links.map((l) => l.url),
+};
 ---
 
 <!doctype html>
@@ -17,10 +43,29 @@ const {
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="author" content={profile.name} />
+    <link rel="canonical" href={canonical} />
+
+    <!-- Open Graph (LinkedIn, Slack, Facebook link previews) -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="profile" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content={`${profile.name} — CV`} />
+
+    <!-- Twitter / X card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <!-- Structured data: identifies this page as the entity's home on the web -->
+    <script type="application/ld+json" set:html={JSON.stringify(personLd)} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

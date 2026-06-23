@@ -7,14 +7,16 @@
     "fetch": "node scripts/fetch-openalex.mjs",
     "data": "node scripts/build-data.mjs",
     "pdf": "node scripts/build-pdf.mjs",
+    "og": "node scripts/build-og.mjs",
     "predev": "node scripts/build-data.mjs",
     "dev": "astro dev",
-    "prebuild": "npm run fetch && npm run data && npm run pdf",
+    "prebuild": "npm run fetch && npm run data && npm run pdf && npm run og",
     "build": "astro build",
     "preview": "astro preview",
     "dois": "node scripts/dump-dois.mjs"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
     "astro": "^6.4.4",
     "js-yaml": "^4.2.0",
     "tailwindcss": "^4.3.0"

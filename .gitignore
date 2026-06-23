@@ -8,6 +8,7 @@ node_modules/
 # generated artifacts (rebuilt every run)
 public/cv-data.json
 public/cv.pdf
+public/og.jpg
 
 # tooling
 bin/

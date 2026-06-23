@@ -33,7 +33,7 @@ jobs:
 
       - run: npm ci
 
-      # Runs fetch (OpenAlex) -> data -> pdf (Typst) -> astro build.
+      # Runs fetch (OpenAlex) -> data -> pdf (Typst) -> og (card) -> astro build.
       - run: npm run build
 
       # Deploys the static `dist/` as a Workers Static-Assets project
