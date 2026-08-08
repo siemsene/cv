@@ -639,19 +639,22 @@ publications:
     note: Revise & Resubmit at Management Science
   - category: working
     authors: "Mohadikar, M., Wuttke, D., Siemsen, E."
-    title: "It Takes Two to Troubleshoot: Technician-Expert Dyads and Augmented Reality in Remote Maintenance Tasks"
+    title: "It Takes Two to Troubleshoot: Technician-Expert Dyads and Augmented Reality in Repair Operations"
   - category: working
     authors: "Niranjan, T. T., Shah, H., Siemsen, E."
     title: "To Have and Not to Hold: A Note on Supply Line Underweighting"
   - category: working
     authors: "Abolghasemi, M., Petropoulos, F., Siemsen, E."
-    title: "Forecast Reconciliation vs. Decision Reconciliation"
+    title: "Reconcile Decisions, Not Forecasts: Coherent Ordering and the Bullwhip Effect in Hierarchical Supply Chains"
   - category: working
     authors: "Feng, K., Zhang, M., Roehrich, J., Siemsen, E."
     title: "The Unbearable Lightness of Nudging: Preventing Data Leaks for Generative AI Users"
   - category: working
     authors: "Petropoulos, F., Girolimetto, D., Spiliotis, E., Siemsen, E."
     title: "Veto Model Selection"
+  - category: working
+    authors: "Zhang, K., Loch, C., Siemsen, E."
+    title: "How a Successful AI Transformation May Cost You Control of Your Company, and How to Avoid It"    
 
 # ---------------------------------------------------------------------
 repositories:
