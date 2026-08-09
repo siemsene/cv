@@ -269,7 +269,7 @@ publications:
     pages: "965–982"
     doi: 10.1002/joom.1257
   - category: journal
-    authors: "Arvan, M., Fahimnia, B., Tam, T., Siemsen, E."
+    authors: "Fahimnia, B., Arvan, M., Tan, T., Siemsen, E."
     year: 2023
     title: "A Hidden Anchor: The Influence of Service Levels on Demand Forecasts"
     venue: Journal of Operations Management
@@ -733,7 +733,7 @@ editorial:
     roles:
       - role: Associate Editor
         years: "2019–"
-  - journal: Supply Chain Management Journal
+  - journal: Journal of Supply Chain Management
     roles:
       - role: Associate Editor
         years: "2017–"
