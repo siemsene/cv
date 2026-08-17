@@ -14,6 +14,26 @@ profile:
   tagline: >-
     Behavioral operations, demand forecasting, and operations strategy —
     studying how people and analytics together make better operational decisions.
+  # Short third-person bio, shown on the site with a copy-to-clipboard
+  # button. Blank lines separate paragraphs.
+  bio: |
+    Enno Siemsen is the Patrick A. Thiele Distinguished Chair in Business at the
+    Wisconsin School of Business, University of Wisconsin–Madison, where he directs
+    the Erdman Center for Operations & Technology Management. His research examines
+    how human judgment and analytics combine in operational decisions, spanning
+    behavioral operations, demand forecasting, and operations strategy. His work has
+    appeared in Management Science, Manufacturing & Service Operations Management,
+    the Journal of Operations Management, and Production and Operations Management,
+    and he is a co-author of Demand Forecasting for Executives and Professionals
+    (CRC Press, 2023).
+
+    He serves as an associate editor at Management Science, Manufacturing & Service
+    Operations Management, and the Journal of Operations Management, and previously
+    served as Associate Dean of MBA and Masters Programs at Wisconsin and as
+    President of the INFORMS Behavioral Operations Management Section. A recipient
+    of the M&SOM Young Scholar Award, he earned his PhD from the University of North
+    Carolina at Chapel Hill. He also builds open-source classroom simulation games
+    for operations courses, shared at edutool.org.
   # OpenAlex author used for live citation metrics + per-paper counts.
   openalex_author_id: A5086167634
   email: esiemsen@wisc.edu

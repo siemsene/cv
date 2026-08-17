@@ -9,6 +9,13 @@ const journalPubs = pubsByCategory('journal');
 const otherPubs = pubsByCategory('other');
 const workingPubs = pubsByCategory('working');
 const currentRoles = cv.positions.filter((p) => p.end == null);
+
+// Short bio: paragraphs are separated by blank lines in cv.yaml; the
+// hard-wrapped source lines within a paragraph collapse to spaces.
+const bioParagraphs = (cv.profile.bio ?? '')
+  .split(/\n\s*\n/)
+  .map((p) => p.replace(/\s+/g, ' ').trim())
+  .filter(Boolean);
 ---
 
 <Base>
@@ -26,6 +33,27 @@ const currentRoles = cv.positions.filter((p) => p.end == null);
           <p class="max-w-2xl font-serif text-xl leading-relaxed text-ink-soft sm:text-[1.4rem]">
             {cv.profile.tagline}
           </p>
+          {bioParagraphs.length > 0 && (
+            <div class="mt-8 max-w-2xl">
+              <div class="mb-4 flex items-baseline gap-3">
+                <h3 class="eyebrow text-ink-soft">Short Bio</h3>
+                <span class="h-px flex-1 bg-line"></span>
+                <button
+                  id="copy-bio"
+                  type="button"
+                  class="rounded-full border border-line px-3 py-1 font-grotesk text-xs font-medium text-ink-soft transition-colors hover:border-accent hover:text-accent"
+                  title="Copy the bio as plain text"
+                >
+                  Copy bio
+                </button>
+              </div>
+              <div id="bio-text" class="space-y-4">
+                {bioParagraphs.map((p) => (
+                  <p class="font-serif text-[1.02rem] leading-relaxed text-ink-soft">{p}</p>
+                ))}
+              </div>
+            </div>
+          )}
           {currentRoles.length > 0 && (
             <dl class="mt-8 grid gap-x-8 gap-y-3 sm:grid-cols-2">
               {currentRoles.map((p) => (
@@ -346,6 +374,20 @@ const currentRoles = cv.positions.filter((p) => p.end == null);
       </main>
     </div>
   </div>
+
+  <!-- Copy the short bio as plain text. -->
+  <script>
+    const copyBtn = document.getElementById('copy-bio');
+    copyBtn?.addEventListener('click', async () => {
+      const text = [...document.querySelectorAll('#bio-text p')]
+        .map((p) => p.textContent?.trim() ?? '')
+        .join('\n\n');
+      await navigator.clipboard.writeText(text);
+      const label = copyBtn.textContent;
+      copyBtn.textContent = 'Copied ✓';
+      setTimeout(() => { copyBtn.textContent = label; }, 1600);
+    });
+  </script>
 
   <!-- Scrollspy: highlight the active section in the side nav. -->
   <script>

@@ -16,6 +16,7 @@ export interface Profile {
   affiliation: string;
   location: string;
   tagline?: string;
+  bio?: string;
   email?: string;
   openalex_author_id?: string;
   links: Link[];
